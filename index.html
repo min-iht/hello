@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Typed.js Example</title>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script></head>
+  <style>
+    body{
+        font-size: 16px;
+    }
+  </style>
+<body>
+  <h1><span id="typing-text"></span></h1>
+
+  <script>
+    var options = {
+        strings: [
+                "코딩은 재밌다",
+                "막상 해보니 예상과 달랐다",
+                "여러분은 요즘 뭐가 재밌어요?",
+            ],
+      typeSpeed: 50, // 한 글자당 타이핑 속도 (밀리초)
+      backSpeed: 30, // 한 글자당 삭제 속도 (밀리초)
+      loop: true, // 반복 여부
+    };
+
+    var typed = new Typed('#typing-text', options);
+  </script>
+</body>
+</html>
